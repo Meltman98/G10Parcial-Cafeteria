@@ -1,7 +1,7 @@
-import { makeApp } from './app';
+import { createApp } from './app';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT ?? 3000;
 
-makeApp().listen(PORT, () => {
-  console.log(`Notes API escuchando en http://localhost:${PORT}`);
+createApp().listen(PORT, () => {
+  console.log(`Cafetería Origen API escuchando en http://localhost:${PORT}`);
 });
